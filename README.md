@@ -118,7 +118,7 @@ Petra huomasi Facebookissa tutun jakaman päivityksen, jossa suositeltiin paikal
 
 ## Frontend
 
-# Käyttöliittymän protoryyppi
+### Käyttöliittymän prototyyppi
 
   [WebDev-2.pdf](https://github.com/Jussipekkak/WebDev-Project/blob/main/WebDev-2.pdf)
 
@@ -190,31 +190,32 @@ Projektin hallintaan jaan projektin eri vaiheisiin, joita pyrin vielä pilkkomaa
 
 ## Projektin Vaiheet
 
-### Vaihe 1: Projektisuunnitelma
+### Vaihe 1: Projektisuunnitelma - 2h
 - Tavoitteiden määrittely
 - Aikataulutus
 
-### Vaihe 2: Suunnittelu
+### Vaihe 2: Suunnittelu - 2h
 - Figma-suunnitelma ulkoasusta
 - Käyttäjäprofiilien laadinta
 
-### Vaihe 3: Tekninen Valmistelu
+### Vaihe 3: Tekninen Valmistelu - 4h
 - Päätetään käytettävät teknologiat
 - Suunnitellaan tietokantojen toteutustapa
 - Valmistellaan versionhallinta
 
-### Vaihe 4: Käyttöliittymän Kehitys
+### Vaihe 4: Käyttöliittymän - 14h
 - Toteutetaan yksinkertaisin mahdollinen käyttöliittymä
 - Toteutetaan toiminnallisuudet
 
-### Vaihe 5: Toiminnallisuuden Testaus
+### Vaihe 5: Toiminnallisuuden Testaus - 3h
 - Testataan kehitetyt toiminnot
 
-### Vaihe 6: Käyttöliittymän Viimeistely
+### Vaihe 6: Käyttöliittymän Viimeistely - 6h
 - Toteutetaan käyttöliittymän lopullinen versio
 
-### Vaihe 7: Lopullinen Testaus
+### Vaihe 7: Lopullinen Testaus - 3h
 - Testataan lopullinen versio kokonaisuudessaan
+
 
 ## Testauksen Painopisteet
 
