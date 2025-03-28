@@ -118,27 +118,69 @@ Petra huomasi Facebookissa tutun jakaman päivityksen, jossa suositeltiin paikal
 
   [WebDev-2.pdf](https://github.com/Jussipekkak/WebDev-Project/blob/main/WebDev-2.pdf)
 
-### Tekninen arkkitehtuuri
+# Tekninen Määrittely
 
-#### Frontend:
-- **Käyttöliittymän elementit:**
-  - Header navigointia varten
-  - Etusivu, jossa lyhyt kuvaus yrittäjästä ja linkki josta saa yhteyden yrittäjään
-  - Tietoa yrittäjästä, jossa tarkempi kuvaus yrittäjästä
-  - Palvelut eriteltynä hinnaston kanssa (Esim, viikkosiivous, muuttosiivous yms neliöhinnalla)
-  - (Mahdollisesti hintalaskuri)
-  - Varauskalenteri, josta näkee vapaat ajat ja mahdollisuus varata aika suoraan
-  - Yhteydenottolomake, josta lähtee viesti yrittäjän sähköpostiin ja käyttäjää saa kuittauksen
+## Frontend
 
-- **Käyttöliittymän toteutus:** React + Tailwind CSS
+### Käyttöliittymän Elementit
+- **Header**: Navigointia varten
+- **Etusivu**:
+  - Lyhyt kuvaus yrittäjästä
+  - Linkki yhteydenottoon
+- **Tietoa yrittäjästä**: Tarkempi kuvaus
+- **Palvelut**:
+  - Eritelty hinnaston kanssa
+  - Esimerkkeinä viikkosiivous, muuttosiivous
+  - Hinnoittelu neliöperusteisesti
+- **Hintalaskuri** (mahdollinen lisäominaisuus)
+- **Varauskalenteri**:
+  - Näyttää vapaat ajat
+  - Mahdollistaa suoran varaamisen
+- **Yhteydenottolomake**:
+  - Lähettää viestin yrittäjän sähköpostiin
+  - Lähettää kuittauksen käyttäjälle
 
-#### Backend:
-- **Tärkeät elementit:**
-  - Express palvelin
-  - Yhteydenotto täytyy lähettää sivuston ulkopuolelle sähköpostiin /POST pyynnöllä
-  - Varauskalenteri ladataan palvelimelta ja varmistetaan, ettei useampi käyttäjä voi varata samaa aikaa
+### Käytettävyys
+- Responsiivinen: Toimii mobiililaitteilla ja tietokoneella
 
-- **Tietokanta:** MongoDB
+### Teknologiat
+- **Frontend-teknologia**: React
+- **Tyylittelyt**: Tailwind CSS
+
+## Backend
+
+### Palvelimen Ominaisuudet
+- **Palvelinteknologia**: Express
+- **Tietokanta**: MongoDB
+
+### Sähköpostiviestintä
+- Yhteydenotot ja varausvahvistukset lähetetään sähköpostitse
+
+### Varauskalenteri
+- Dynaaminen lataus palvelimelta
+- Reaaliaikainen varausten hallinta
+- Estetään päällekkäiset varaukset
+
+### Yhteydenottolomake
+- HTML-pohjainen lomake
+- Kentät: nimi, sähköposti, puhelinnumero, viesti
+- Lähettää viestin Nodemailer-kirjastolla
+- Palauttaa vahvistusviestin käyttäjälle
+
+## CRUD-Elementit
+
+### GET /vapaat-ajat
+- Hakee kaikki vapaat ajat kalenterin näkyvältä ajanjaksolta
+
+### POST /varaus
+- Tarkistaa ajan saatavuuden
+- Varaa ajan tietokantaan
+- Lähettää vahvistusviestin tilaajalle ja yrittäjälle
+- Palauttaa viestin "Varaus vahvistettu"
+
+### POST /yhteydenotto
+- Lähettää yhteydenottolomakkeen tiedot yrittäjän sähköpostiin
+- Palauttaa viestin: "Kiitos yhteydenotosta. Vastaamme 24 tunnin sisällä."
 
 ---
 
@@ -164,3 +206,4 @@ Petra huomasi Facebookissa tutun jakaman päivityksen, jossa suositeltiin paikal
 - Virheenkorjaukset
 - Käyttäjätestaus
 - Julkaisu
+
