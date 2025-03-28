@@ -114,13 +114,13 @@ Petra huomasi Facebookissa tutun jakaman päivityksen, jossa suositeltiin paikal
 
 ---
 
-### Käyttöliittymän protoryyppi
-
-  [WebDev-2.pdf](https://github.com/Jussipekkak/WebDev-Project/blob/main/WebDev-2.pdf)
-
 # Tekninen Määrittely
 
 ## Frontend
+
+# Käyttöliittymän protoryyppi
+
+  [WebDev-2.pdf](https://github.com/Jussipekkak/WebDev-Project/blob/main/WebDev-2.pdf)
 
 ### Käyttöliittymän Elementit
 - **Header**: Navigointia varten
@@ -145,7 +145,7 @@ Petra huomasi Facebookissa tutun jakaman päivityksen, jossa suositeltiin paikal
 
 ### Teknologiat
 - **Frontend-teknologia**: React
-- **Tyylittelyt**: Tailwind CSS
+- **Tyylit**: Tailwind CSS
 
 ## Backend
 
@@ -184,26 +184,61 @@ Petra huomasi Facebookissa tutun jakaman päivityksen, jossa suositeltiin paikal
 
 ---
 
-### Projektin hallinta
+# Projektin Hallinta
 
-#### Vaihe 1: Projektisuunnitelma
+Projektin hallintaan jaan projektin eri vaiheisiin, joita pyrin vielä pilkkomaan mahdollisimman pieniin ja toteutettaviin palasiin. Projekti tulee olla valmis 29.4.2025 mennessä. Projektin toteutukseen on aikaa 4 viikkoa, joka tarkoittaa noin 40 tuntia työskentelyä.
+
+## Projektin Vaiheet
+
+### Vaihe 1: Projektisuunnitelma
 - Tavoitteiden määrittely
 - Aikataulutus
 
-#### Vaihe 2: Figma suunnitelma ulkoasusta
+### Vaihe 2: Suunnittelu
+- Figma-suunnitelma ulkoasusta
 - Käyttäjäprofiilien laadinta
 
-#### Vaihe 3: Tekninen valmistelu
+### Vaihe 3: Tekninen Valmistelu
 - Päätetään käytettävät teknologiat
-- Backendin luominen ja testaus
+- Suunnitellaan tietokantojen toteutustapa
+- Valmistellaan versionhallinta
 
-#### Vaihe 4: Käyttöliittymä
-- React + Tailwind CSS
-- Palveluiden hinnaston luominen ja esittely
-- Yhteydenottolomake ja varauskalenteri
+### Vaihe 4: Käyttöliittymän Kehitys
+- Toteutetaan yksinkertaisin mahdollinen käyttöliittymä
+- Toteutetaan toiminnallisuudet
 
-#### Vaihe 5: Testaus ja julkaisua edeltävät tarkistukset
-- Virheenkorjaukset
-- Käyttäjätestaus
-- Julkaisu
+### Vaihe 5: Toiminnallisuuden Testaus
+- Testataan kehitetyt toiminnot
+
+### Vaihe 6: Käyttöliittymän Viimeistely
+- Toteutetaan käyttöliittymän lopullinen versio
+
+### Vaihe 7: Lopullinen Testaus
+- Testataan lopullinen versio kokonaisuudessaan
+
+## Testauksen Painopisteet
+
+Lopullisen tuotoksen testaamisessa keskitytään seuraaviin osa-alueisiin:
+
+1. **Ulkoasu ja Käytettävyys**
+   - Sivuston ulkoasu ja responsiivisuus
+   - Linkit ja navigointi toimivat odotetulla tavalla
+
+2. **Lomakkeiden Toiminnallisuus**
+   - Lomakkeiden kenttien validointi
+   - Lomakkeet antavat ilmoituksen onnistuneesta tai epäonnistuneesta lähetyksestä
+   - Lomakkeen tietojen oikeellisuuden varmistaminen
+
+3. **Varauskalenteri**
+   - Näyttää reaaliaikaisen varaustilanteen
+   - Toimii odotetulla tavalla
+   - Ei salli vanhojen päivämäärien valintaa
+   - Varauksen oikea tallennus tietokantaan
+
+4. **Viestintä**
+   - Varauksista lähtee sähköposti tilaajalle ja yrittäjälle
+   - Yhteydenottolomake lähettää sähköpostin oikeaan osoitteeseen
+
+5. **Virheenkäsittely**
+   - Virheellisesti täytetystä lomakkeesta näytetään virheilmoitus
 
