@@ -1,5 +1,8 @@
 # Projektisuunnitelma
 
+Projektissa on tarkoitus toteuttaa verkkosivu kaverin siivousyritykselle. Verkkosivun tarkoituksena on toimia helppona tapana tutustua yritykseen ja sen yrittäjään. 
+Sivustolta tulee löytyä kuvaus yrittäjästä, varauskalenteri, hinnasto sekä yhteydenottolomake. 
+
 ## Tuntikirjaus
 
 | Päivämäärä | Tunnit | Selitys |
