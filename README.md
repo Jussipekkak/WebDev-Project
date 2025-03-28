@@ -113,6 +113,11 @@ Petra huomasi Facebookissa tutun jakaman päivityksen, jossa suositeltiin paikal
 - Mahdollisuus lisätietoihin (esim. “sisältää karmit”)
 
 ---
+
+### Käyttöliittymän protoryyppi
+
+  [WebDev-2.pdf](https://github.com/Jussipekkak/WebDev-Project/blob/main/WebDev-2.pdf)
+
 ### Tekninen arkkitehtuuri
 
 #### Frontend:
