@@ -3,7 +3,7 @@ FROM node:18 AS build
 
 WORKDIR /app
 COPY frontend ./frontend
-RUN cd client && npm install && npm run build
+RUN cd frontend && npm install && npm run build
 
 # Vaihe 2: Palvele Expressillä
 FROM node:18
