@@ -34,7 +34,7 @@ const BookingSystem = () => {
     const fetchBookings = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:5000/bookings");
+        const response = await fetch("http://localhost:8080/bookings");
         if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
         const data = await response.json();
         setBookings(data);
@@ -66,7 +66,7 @@ const BookingSystem = () => {
         // duration poistettu lähetyksestä
       };
 
-      const response = await fetch("http://localhost:5000/bookings", {
+      const response = await fetch("http://localhost:8080/bookings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(bookingData),
