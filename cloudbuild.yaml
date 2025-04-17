@@ -1,0 +1,26 @@
+steps:
+  # Buildaa Docker-image
+  - name: 'Build Docker Image'
+    image: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/fullstack:$SHORT_SHA', '.']
+
+  # Pushaa Docker-image Google Container Registryyn (GCR)
+  - name: 'Push Docker Image to GCR'
+    image: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/fullstack:$SHORT_SHA']
+
+  # Deployaa Cloud Runiin (muokkaa tarpeidesi mukaan)
+  - name: 'Deploy to Cloud Run'
+    image: 'google/cloud-sdk'
+    entrypoint: 'gcloud'
+    args:
+      - 'run'
+      - 'deploy'
+      - 'fullstack-$SHORT_SHA' # Palvelun nimi Cloud Runissa
+      - '--image'
+      - 'gcr.io/$PROJECT_ID/fullstack:$SHORT_SHA'
+      - '--region'
+      - 'europe-north1' # Muuta tarvittaessa
+      - '--platform'
+      - 'managed'
+    waitFor: ['Push Docker Image to GCR']
