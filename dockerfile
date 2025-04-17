@@ -1,26 +1,22 @@
-# Vaihe 1: Rakenna frontend
-FROM node:18 AS build
-
+# Vaihe 1: frontend build
+FROM node:18 as build
 WORKDIR /app
 COPY frontend ./frontend
 RUN cd frontend && npm install && npm run build
 
-# Vaihe 2: Palvele Expressillä
+# Vaihe 2: backend + frontendin build
 FROM node:18
+WORKDIR /app/backend
 
-WORKDIR /app
-
-# Kopioi server-koodi ja rakenne
-COPY backend ./backend
-COPY backend/package*.json ./backend/
+# Kopioi ja asenna riippuvuudet
+COPY backend/package*.json ./
 RUN npm install
 
-# Kopioi rakennettu frontend Expressin näkyviin
-COPY --from=build /app/backend/dist ./frontend/dist
+# Kopioi backendin lähdekoodi
+COPY backend ./
 
-# Aseta ympäristömuuttujat käyttöön
-ENV NODE_ENV=production
-ENV PORT=8080
+# Kopioi frontendin build backendin sisään (josta Express palvelee sen)
+COPY --from=build /app/frontend/dist ./client
 
-EXPOSE 8080
-CMD ["node", "server/index.js"]
+EXPOSE 5000
+CMD ["node", "server.js"]
