@@ -1,0 +1,31 @@
+[
+    {
+      "customer": "Matti Meikäläinen",
+      "date": "2025-04-01",
+      "time": "10:00",
+      "service": "Home Cleaning",
+      "price": 50.00
+    },
+    {
+      "customer": "Anna Virtanen",
+      "date": "2025-04-02",
+      "time": "14:00",
+      "service": "Office Cleaning",
+      "price": 120.00
+    },
+    {
+      "customer": "Pekka Pouta",
+      "date": "2025-04-03",
+      "time": "09:00",
+      "service": "Carpet Cleaning",
+      "price": 80.00
+    },
+    {
+      "customer": "Liisa Lampinen",
+      "date": "2025-04-04",
+      "time": "16:00",
+      "service": "Window Cleaning",
+      "price": 60.00
+    }
+  ]
+  
