@@ -12,7 +12,7 @@ WORKDIR /app
 
 # Kopioi server-koodi ja rakenne
 COPY backend ./backend
-COPY package*.json ./
+COPY backend/package*.json ./backend/
 RUN npm install
 
 # Kopioi rakennettu frontend Expressin näkyviin
