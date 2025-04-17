@@ -18,5 +18,5 @@ COPY backend ./
 # Kopioi frontendin build backendin sisään (josta Express palvelee sen)
 COPY --from=build /app/frontend/dist ./client
 
-EXPOSE 5000
+EXPOSE 8080
 CMD ["node", "server.js"]
