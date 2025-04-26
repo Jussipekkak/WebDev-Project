@@ -12,9 +12,11 @@
 | 10.4.       | 6h     | Kalenterin ja sähköpostipalvelimen kehitys |
 | 16.4.       | 4h     | Kalenterin ja sähköpostipalvelimen käyttöönotto |
 | 17.4.       | 8h     | Pilvijulkaisun toteutusta |
+| 25.4.       | 3h     |  |
+| 26.4.       | 4h     |  |
+| 27.4.       | 4h     |  |
 
 
-Add something
 
 ## 1. Environment
 
