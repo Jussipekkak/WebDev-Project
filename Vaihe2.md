@@ -12,9 +12,13 @@
 | 10.4.       | 6h     | Kalenterin ja sähköpostipalvelimen kehitys |
 | 16.4.       | 4h     | Kalenterin ja sähköpostipalvelimen käyttöönotto |
 | 17.4.       | 8h     | Pilvijulkaisun toteutusta |
+<<<<<<< HEAD
 | 25.4.       | 3h     |  |
 | 26.4.       | 4h     |  |
 | 27.4.       | 4h     |  |
+=======
+| 18.4.       | 2h     | Dokumentointia |
+>>>>>>> 76c78405e1b0edc1b931ae458e398408d6fc4cf5
 
 
 
@@ -70,4 +74,24 @@ Perustason virheidenkäsittely on toteutettu backendissä: virheelliset pyynnöt
 
 ## 9. User interface and interaction
 
-Käyttöliittymä on yksinkertainen ja selkeä. Käyttöliittymässä on.. 
+Käyttöliittymän kehityksessä on panostettu yksinkertaisuuteen ja intuitiivisuuteen. Käyttöliittymä koostuu seuraavista elementeistä:
+
+    Header jossa navigointpalkki. 
+
+    Hero page.
+    Toimii landing pagena. Tarjoaa linkit tärkeimpiin osioihin, eli kalenteriin ja yhteydenottolomakkeeseen. 
+
+    Yrittäjän esittely.
+    Tässä osiossa kerrotaan tarkemmin yrittäjästä. Elementti on olemassa, mutta sisältö ei vastaa vielä lopullista versioita. 
+
+    Hinnasto. 
+    Elementissä on tällä hetkellä esimerkki millainen lopullinen toteutus voisi olla. Elementtiin lisätään mahdollisesti laskuri, jolla asiakas voi arvioida palvelun lopullista hintaa. 
+
+    Kalenteri.
+    Tässä elementissä on kalenteri, joka näyttää punaisella jo varatut päivät. Klikkaamalla vapaata päivää, käyttäjä saa lomakkeen, jonka täyttämällä voi tehdä varauksen. Tehdystä varauksesta sivuston ylläpitäjä saa tiedon sähköpostiin. 
+
+    Contact- lomake
+    Lomakkeella saa yhteyden ylläpitäjään. Lähetetty lomake lähetetään ylläpitäjän sähköpostiin. Lomakkeessa tulee olla lähettäjän sähköposti ja puhelinnumero jotta yrittäjä voi palata asiaan. 
+
+  
+    
