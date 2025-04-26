@@ -12,13 +12,7 @@
 | 10.4.       | 6h     | Kalenterin ja sähköpostipalvelimen kehitys |
 | 16.4.       | 4h     | Kalenterin ja sähköpostipalvelimen käyttöönotto |
 | 17.4.       | 8h     | Pilvijulkaisun toteutusta |
-<<<<<<< HEAD
-| 25.4.       | 3h     |  |
-| 26.4.       | 4h     |  |
-| 27.4.       | 4h     |  |
-=======
-| 18.4.       | 2h     | Dokumentointia |
->>>>>>> 76c78405e1b0edc1b931ae458e398408d6fc4cf5
+
 
 
 
