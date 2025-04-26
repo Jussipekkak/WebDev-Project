@@ -1,15 +1,15 @@
-const express = require("express");
 const app = require("./app");
-const path = require("path");
 const connectDB = require("./config/mongodb");
 const { setDB } = require("./controllers/bookingController");
 
+const __dirname = path.dirname(__filename);
+
 const PORT = process.env.PORT || 8080;
 
-app.use(express.static(path.join(__dirname, "../frontend/dist")));
+app.use(express.static(path.join(__dirname, "dist")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
 (async () => {
