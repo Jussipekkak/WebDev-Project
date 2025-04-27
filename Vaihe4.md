@@ -1,4 +1,4 @@
-# Project phase 4 - The end
+# Phase 4 – Project Presentation
 
 ## Tuntikirjaus
 
@@ -18,7 +18,31 @@
 |             | =      |         |
 |             | 51h    |         |
 
-## 1. Käyttötapaukset
+
+
+
+
+##  Project title
+
+**Booking System Web Application with React, Express, and MongoDB**
+
+---
+
+##  Project overview
+
+Tämän projektin tarkoituksena on tarjota siivousyrityksen asiakkaille mahdollisuus tehdä varauksia helposti verkkosovelluksen kautta. Kohderyhmänä ovat henkilöt, jotka tarvitsevat helppokäyttöistä varausjärjestelmää ja yhteydenottolomaketta.  
+Frontend on toteutettu Reactilla ja backend Expressillä, ja tietokanta on MongoDB Atlas -pilvipalvelussa. Sovellus julkaistiin Google Cloudin avulla.
+
+---
+
+##  Käyttötapaukset
+
+| Use Case | Implemented (Yes/No) | Demonstration / Notes |
+|----------|----------------------|------------------------|
+| Käyttäjä voi tehdä varauksen kalenterista lomakkeella | Yes | Lomake tallentaa varaukset MongoDB:hen. |
+| Yhteydenottolomake, jolla voi lähettää viestin | Yes | Lomakkeen data vastaanotetaan ja käsitellään backendissä. |
+| Näkymä varauksista ja viesteistä | No | Ei priorisoitu ensimmäiseen versioon, mahdollista jatkokehitystä varten. |
+
 
 Määritin alussa projektille mahdollisia käyttötapauksia. Käyn tässä läpi miten kunkin käyttäjän toiveisiin on vastattu. 
 Tarkemmin tapauksista voi lukea täältä [Käyttötapaukset](https://github.com/Jussipekkak/WebDev-Project/blob/main/README.md)
@@ -57,31 +81,58 @@ Tärkeää sivustolla:
 
 Sivustolta ei tällä hetkellä löydy asiakaspalautteita. Muut kohdat täyttyvät.
 
+---
+
+##  Technical implementation
+
+- **Frontend:** React + Vite, lomakkeet ja reaktiivinen käyttöliittymä.
+- **Backend:** Express.js, REST API -pohjaiset reititykset varauksille ja yhteydenotoille.
+- **Tietokanta:** MongoDB Atlas (pilvipohjainen).
+- **Deployment:** Google Cloud (Dockerfile pohjainen julkaisu).
+- **Muita kirjastoja:**
+  - CORS ja Body-Parser backendissä
+  - Axios frontendissa tiedon lähettämiseen
+
+Arkkitehtuuri on jaettu frontend- ja backend-kansioihin. Buildattu frontend palvellaan Expressin kautta staattisena sisältönä.
+
+---
+
+##  Development process
+
+Aloitin määrittelemällä projektin vaatimukset ja use caset. Ensimmäisenä rakensin toimivan frontendin lomakkeineen.  
+Backendissä loin REST-API-reitit ja MongoDB-yhteyden. Lopullinen julkaisu aiheutti haasteita erityisesti Docker-konfiguroinnin ja environment-muuttujien asettamisen kanssa, mutta ongelmat ratkaistiin onnistuneesti.  
+Projektin aikana opin erityisesti julkaisuun liittyvistä vaatimuksista ja muuttujien käsittelystä lopullisessa julkaisussa.
+
+---
+
+##  Reflection and future work
+
+**Mikä toimi hyvin:**  
+- Toteutus pilvessä onnistui! Palvelu pöyrii Google Cloud palvelussa Cloud Run sovelluksella. Pilvipalvelu on yhdistetty Git repoon, josta pilvipalvelu         päivittää sivustoa jokaisen uuden pushin myötä. 
+- Frontendin ja backendin yhteensovittaminen sujui hyvin.  
+- Julkaisu onnistui lopulta ilman suuria lisämuutoksia.
+- Ulkoasu on hieno
+- Projekti on jaettu moduuleihin, joten hallinta on helppoa
+
+**Haasteet:**  
+- Dockerfilen rakentaminen niin, että sekä frontend että backend toimivat samassa kontissa.
+- MongoDB Atlas SSL-yhteyshaasteet Googlen ympäristössä.
+
+**Tulevaisuuden parannuksia:**  
+- Admin-näkymä varauksien ja yhteydenottojen hallintaan.   
+- Käyttäjätunnistautuminen ja kirjautuminen.
+- Tietoturvan parantaminen
+
+---
 
 
-## 1. Environment
+---
 
-Toteutus pilvessä onnistui! Palvelu pöyrii Google Cloud palvelussa Cloud Run sovelluksella. Pilvipalvelu on yhdistetty Git repoon, josta pilvipalvelu päivittää sivustoa jokaisen uuden pushin myötä. 
+##  Presentation link
 
-
-
-## 2. Frontend
-
-Alunperin oli tarkoitus toteuttaa ulkoasu Tailwind.css käyttäen. Keskityin kuitenkin paljon enemmän toiminnallisuuksien hiomiseen, joten en sitten vaivautunut ottamaan tailwindiä käyttöön. Ulkoasu on toteutettu inline ja erillisillä .css tiedostoilla.
-
-(Onnistuin viimeisillä ulkoasun muokkauksilla tuhoamaan responsiivisuuden jota en enää alkanut korjaamaan.)
+[Youtube](https://youtu.be/seZ6TOnDG1o)
 
 
-
-## 3. Basic structure and architecture
-
-Sovellus toimii hyvin. Toki siinä on kovakoodattuja tunnuksia ja muita totaalisen kiellettyjä asioita, mutta mikäli sivuston kehitystä aijon jatkaa, niin sitten hoidan tietoturvan asianmukaiseen kuntoon. 
-
-
-
-## 4. Testing and error handling
-
-Testausta on tehty liian vähän kun kaikki aika meni juuri ja juuri toteutuksesta selviämiseen. 
 
 
 
