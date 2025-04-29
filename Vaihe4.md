@@ -33,6 +33,8 @@
 Tämän projektin tarkoituksena on tarjota siivousyrityksen asiakkaille mahdollisuus tehdä varauksia helposti verkkosovelluksen kautta. Kohderyhmänä ovat henkilöt, jotka tarvitsevat helppokäyttöistä varausjärjestelmää ja yhteydenottolomaketta.  
 Frontend on toteutettu Reactilla ja backend Expressillä, ja tietokanta on MongoDB Atlas -pilvipalvelussa. Sovellus julkaistiin Google Cloudin avulla.
 
+Projekti löytyy osoitteesta (https://webdev-final-407162888335.europe-north1.run.app)
+
 ---
 
 ##  Käyttötapaukset
